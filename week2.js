@@ -9,6 +9,7 @@ function upDate(previewPic){
        to the alt text of the preview image 
        */
        document.getElementById('image').innerHTML=previewPic.alt;
+       document.getElementById('image').style.backgroundImage = "url("+previewPic.src+")"; 
        }
    
        function unDo(){
@@ -20,4 +21,5 @@ function upDate(previewPic){
        back to the original text.  You can use the html code to see what that original text was
        */
             document.getElementById('image').innerHTML="		Hover over an image below to display here.";
+           
        }
